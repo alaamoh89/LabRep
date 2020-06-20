@@ -7,10 +7,10 @@ var server = http.createServer(function (request, response) {
     response.write("<!DOCTYPE html>");
     response.write("<html>");
     response.write("<head>");
-    response.write("<title>Environment</title>");
+    response.write("<title>Hello</title>");
     response.write("</head>");
     response.write("<body>");
-    response.write("HELLO");
+    response.write(`Hello from ${process.env.MyParameter}!`);
     response.write("</body>");
     response.write("</html>");
     response.end();
