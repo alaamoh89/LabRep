@@ -10,7 +10,7 @@ var server = http.createServer(function (request, response) {
     response.write("<title>Environment</title>");
     response.write("</head>");
     response.write("<body>");
-    response.write(`Hello from ${process.env.Environment}!`);
+    response.write("HELLO");
     response.write("</body>");
     response.write("</html>");
     response.end();
